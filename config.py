@@ -6,4 +6,4 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN .env mein set karo!")
+    raise ValueError("❌ BOT_TOKEN environment variable nahi mila! Railway Variables mein add karo.")
