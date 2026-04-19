@@ -19,3 +19,10 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+from handlers.my_quizzes import router as my_quizzes_router
+from handlers.leaderboard import router as leaderboard_router
+
+# ... purane routers ke baad add karo
+dp.include_router(my_quizzes_router)
+dp.include_router(leaderboard_router)
