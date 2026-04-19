@@ -28,7 +28,7 @@ async def main():
     dp.include_router(my_quizzes_router)
     dp.include_router(leaderboard_router)
 
-    print("🚀 QuizBot successfully started on Railway!")
+    print("🚀 QuizBot successfully started!")
     print("Bot is now polling...")
 
     await dp.start_polling(bot)
